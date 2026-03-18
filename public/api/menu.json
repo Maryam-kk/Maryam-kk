@@ -1,0 +1,86 @@
+[
+	{
+		"title": "Voorgerechten",
+		"dishes": [
+			{
+				"name": "Burrata met tomaat",
+				"price": "9,50",
+				"description": "Romige burrata, basilicumolie en geroosterde tomaten.",
+				"tags": ["Vegetarisch"],
+				"image": "foto2",
+				"alt": "Burrata met tomaat en basilicumolie"
+			},
+			{
+				"name": "Zalm tartaar",
+				"price": "10,50",
+				"description": "Met dille, limoen, kappertjes en krokante zuurdesem.",
+				"tags": ["Vis", "Fris"],
+				"image": "foto1",
+				"alt": "Zalm tartaar met dille en kappertjes"
+			}
+		]
+	},
+	{
+		"title": "Hoofdgerechten",
+		"dishes": [
+			{
+				"name": "Ravioli pompoen",
+				"price": "17,50",
+				"description": "Met salieboter, hazelnoot en Parmezaan.",
+				"tags": ["Vegetarisch", "Huisgemaakt"],
+				"image": "foto3",
+				"alt": "Ravioli met pompoen en salieboter"
+			},
+			{
+				"name": "Steak frites",
+				"price": "21,50",
+				"description": "Gegrilde bavette, chimichurri en handgesneden friet.",
+				"tags": ["Vlees", "Populair"],
+				"image": "foto4",
+				"alt": "Gegrilde bavette met friet en chimichurri"
+			}
+		]
+	},
+	{
+		"title": "Desserts",
+		"dishes": [
+			{
+				"name": "Tiramisu",
+				"price": "7,00",
+				"description": "Klassieker met espresso, mascarpone en cacao.",
+				"tags": ["Dessert"],
+				"image": "foto5",
+				"alt": "Tiramisu met cacao"
+			},
+			{
+				"name": "Creme brulee",
+				"price": "7,00",
+				"description": "Met vanille en gekarameliseerde suikerlaag.",
+				"tags": ["Dessert", "Glutenvrij"],
+				"image": "foto6",
+				"alt": "Creme brulee met krokante suiker"
+			}
+		]
+	},
+	{
+		"title": "Vegetarisch & vegan",
+		"dishes": [
+			{
+				"name": "Gegrilde bloemkool steak",
+				"price": "16,50",
+				"description": "Met harissa, kikkererwten en kruidige yoghurtsaus.",
+				"tags": ["Vegetarisch", "Pittig"],
+				"image": "foto7",
+				"alt": "Bloemkool steak met harissa"
+			},
+			{
+				"name": "Vegan curry bowl",
+				"price": "15,50",
+				"description": "Kokoscurry met zoete aardappel, linzen en koriander.",
+				"tags": ["Vegan", "Glutenvrij"],
+				"image": "foto8",
+				"alt": "Vegan curry bowl met linzen en koriander"
+			}
+		]
+	}
+]
