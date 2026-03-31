@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/Home.vue';
 import MenuView from '../views/Menu.vue';
 import ContactView from '../views/Contact.vue';
+import AanbiedingView from '../views/Aanbieding.vue';
 
 const routes = [
 	{
@@ -22,6 +23,16 @@ const routes = [
 			title: 'Menu | Bistro Delicioso',
 			description:
 				'Ontdek ons seizoensmenu met voorgerechten, hoofdgerechten, desserts en vegetarische opties. Vers bereid en vol smaak.',
+		},
+	},
+	{
+		path: '/aanbieding',
+		name: 'aanbieding',
+		component: AanbiedingView,
+		meta: {
+			title: 'Aanbiedingen | Bistro Delicioso',
+			description:
+				'Bekijk alle actuele aanbiedingen van Bistro Delicioso, van lunchdeals tot avondmenu specials.',
 		},
 	},
 	{

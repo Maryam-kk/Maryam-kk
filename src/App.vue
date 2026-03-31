@@ -7,6 +7,7 @@ import FooterBar from './components/Footer.vue';
 const navLinks = [
 	{ label: 'Home', to: '/' },
 	{ label: 'Menu', to: '/menu' },
+	{ label: 'Aanbieding', to: '/aanbieding' },
 	{ label: 'Contact', to: '/contact' },
 ];
 </script>
