@@ -135,7 +135,14 @@ h3 {
 	position: sticky;
 	top: 0;
 	z-index: 10;
+	background: rgba(246, 251, 248, 0.7);
 	backdrop-filter: blur(10px);
+	transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-shell--scrolled {
+	background: rgba(26, 36, 32, 0.92);
+	box-shadow: 0 10px 26px rgba(26, 36, 32, 0.28);
 }
 
 .nav-bar {
@@ -152,6 +159,10 @@ h3 {
 	letter-spacing: 0.04em;
 }
 
+.nav-shell--scrolled .brand {
+	color: #f5fffb;
+}
+
 .nav-toggle {
 	background: transparent;
 	border: 1px solid var(--border);
@@ -161,12 +172,23 @@ h3 {
 	color: var(--text);
 }
 
+.nav-shell--scrolled .nav-toggle {
+	border-color: rgba(255, 255, 255, 0.3);
+	color: #f5fffb;
+}
+
 .nav-toggle__icon {
 	width: 20px;
 	height: 2px;
 	background: var(--text);
 	position: relative;
 	display: inline-block;
+}
+
+.nav-shell--scrolled .nav-toggle__icon,
+.nav-shell--scrolled .nav-toggle__icon::before,
+.nav-shell--scrolled .nav-toggle__icon::after {
+	background: #f5fffb;
 }
 
 .nav-toggle__icon::before,
@@ -199,10 +221,24 @@ h3 {
 	color: var(--muted);
 }
 
+.nav-shell--scrolled .nav-link {
+	color: rgba(245, 255, 251, 0.8);
+}
+
+.nav-shell--scrolled .nav-link:hover {
+	color: #f5fffb;
+}
+
 .nav-link[aria-current='page'] {
 	color: var(--text);
 	border-color: var(--border);
 	background: rgba(43, 191, 154, 0.12);
+}
+
+.nav-shell--scrolled .nav-link[aria-current='page'] {
+	color: #f5fffb;
+	border-color: rgba(255, 255, 255, 0.3);
+	background: rgba(43, 191, 154, 0.24);
 }
 
 /* Hero */
@@ -495,6 +531,11 @@ h3 {
 		display: none;
 		flex-direction: column;
 		min-width: 200px;
+	}
+
+	.nav-shell--scrolled .nav-links {
+		background: rgba(26, 36, 32, 0.96);
+		border-color: rgba(255, 255, 255, 0.3);
 	}
 
 	.nav-links--open {

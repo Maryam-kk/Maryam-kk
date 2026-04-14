@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
 defineProps({
@@ -10,6 +10,7 @@ defineProps({
 });
 
 const isOpen = ref(false);
+const isScrolled = ref(false);
 const route = useRoute();
 
 const toggleMenu = () => {
@@ -19,10 +20,23 @@ const toggleMenu = () => {
 const closeMenu = () => {
 	isOpen.value = false;
 };
+
+const handleScroll = () => {
+	isScrolled.value = window.scrollY > 16;
+};
+
+onMounted(() => {
+	handleScroll();
+	window.addEventListener('scroll', handleScroll, { passive: true });
+});
+
+onUnmounted(() => {
+	window.removeEventListener('scroll', handleScroll);
+});
 </script>
 
 <template>
-	<header class="nav-shell">
+	<header class="nav-shell" :class="{ 'nav-shell--scrolled': isScrolled }">
 		<div class="nav-bar">
 			<RouterLink class="brand" to="/" @click="closeMenu">
 				<span aria-label="Bistro Delicioso">Bistro Delicioso</span>
